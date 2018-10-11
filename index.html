@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Processando o Canvas na seção HEAD</title>
+		<script type="text/javascript">
+			window.onload = function () {
+				// Aqui trabalharemos com o Canvas
+			}
+		</script>
+	</head>
+
+	<body>
+		<canvas id="meu_canvas" width="100" heigth="100">
+			Seu navegador é uma bosta e não suporta o Canvas do HTML5 <br>
+			Tente atualizá-lo
+		</canvas>
+		<script type="text/javascript">
+			//referenciando o canvas
+			var canvas = document.getElementById('meu_canvas');
+
+			//Obtendo o contexto grafico
+			var context = canvas.getContext('2d');
+
+			//Preenchimento vermelho
+			context.fillStyle = 'red';
+			
+		</script>
+	</body>
+
+</html>
+
